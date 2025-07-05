@@ -1,0 +1,10 @@
+Here we store the inputs used for the IBP chunklearner validation.
+The input mat files consist of a training and (sometimes) a test structure with shape and pos elements in them, representing the experiment's familiarization and test phases.
+
+inputs_2001_exp1.mat			    training and test structures for Fiser & Aslin (2001) Experiment 1 
+inputs_2001_exp1_forpy.mat          same data as in inputs_2001_exp1.mat but in different format for python usage
+inputs_2001_exp1__truncated.mat 	training sequence for validation purposes, derived from inputs_2001_exp1.mat: the 					oblique pairs are deleted, only 8 shapes remain, forming 2 vertical and 2 horizontal 					pairs; repetitions are deleted, leaving 28 scenes
+
+gridhelp_mult.m 			        function for plotting the input scenes
+lscatter.m 				            auxiliary plotting function for gridhelp_mult.m
+

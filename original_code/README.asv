@@ -1,0 +1,31 @@
+# chunkLearner_IBP
+chunk learner with nonparametric Bayesian modeling using the Indian Buffet Process
+
+codes for running the model:
+    wood_batch.m                    script for parameter and input definition and running the model that calculates the posteriors
+    wood_ibp_learning_frontend.m    function to call the Gibbs sampler for Y and Z
+    wood_make_gibbs_y_spatial.m     Gibbs sampler for Y
+    wood_make_gibbs_z_spatial.m     Gibbs sampler for Z
+    calc_px_training.m              calculation of likelihood P(X_t|Z, Y_:t)
+    calc_pv_training.m              calculation of likelihood P(V|Z, Y)
+    calc_pv_trial.m                 trial-wise auxiliary calculaion for calc_pv_training
+
+codes that might be useful later for scene probabilities and choice probabilities
+    humanScript.m                   script for running the model for whole experiments to return choice probabilities
+    humantest.m                     function for calculating the choice probabilities from the posteriors
+
+    pScene_spatial.m                probability of a scene, given the posterior Z and R 
+                                    P(XScene) =
+                                        = sum_{all output datum: for all steps} P(XScene | Z, R) * P(Z, R) =
+                                        = sum pScene_ZR(XScene, Z, R..) * 1/stepNo
+        pScene_ZR_spatial.m         auxiliary fn for pScene_spatial
+
+    pScene_spatial_Cpost.m          probability of a scene, given the posterior Z and R using the C posterior 
+        pScene_ZR_spatial_Cpost.m   auxiliary fn for pScene_spatial_Cpost
+        calc_pv_training_Cpost.m    auxiliary fn for pScene_ZR_spatial_Cpost
+        calc_pv_trial_Cpost.m       auxiliary fn for calc_pv_training_Cpost
+
+inputs are in the inputs folder
+
+first input_2001_Exp1 needs to be loaded
+then wood_batch should run

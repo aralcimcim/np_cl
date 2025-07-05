@@ -1,0 +1,109 @@
+command = '[Zpost10 Ypost10 Rpost10 muCTpost SigmaCTpost runTimes Kmax wburn wsample] = wood_ibp_learning_frontend(Xh10,Vh10,lda,eps,sigmaU,sigmaV,phi,sigmaC,alpha,bAlpha,bBeta, Kmax, wburn, wsample, stepNo, burnIn )';
+
+phi=10000;
+[Zpost10_p10 Ypost10_p10 Rpost10_p10 muCTpost SigmaCTpost runTimes Kmax wburn wsample] = wood_ibp_learning_frontend(Xh10,Vh10,lda,eps,sigmaU,sigmaV,phi,sigmaC,alpha,bAlpha,bBeta, Kmax, wburn, wsample, stepNo, burnIn );
+save('epsldaCool_phi10K', 'Zpost10_p10', 'Ypost10_p10', 'Rpost10_p10', 'muCTpost', 'SigmaCTpost', 'runTimes', 'Kmax', 'wburn', 'wsample', ...
+    'Xh10', 'Vh10', 'lda', 'eps', 'sigmaU', 'sigmaV', 'phi' , 'sigmaC', 'alpha', 'bAlpha', 'bBeta', 'Kmax', 'wburn', 'wsample', 'stepNo', 'burnIn'); 
+
+phi=100000;
+[Zpost10_p100 Ypost10_p100 Rpost10_p100 muCTpost SigmaCTpost runTimes Kmax wburn wsample] = wood_ibp_learning_frontend(Xh10,Vh10,lda,eps,sigmaU,sigmaV,phi,sigmaC,alpha,bAlpha,bBeta, Kmax, wburn, wsample, stepNo, burnIn );
+save('epsldaCool_phi100K', 'Zpost10_p100', 'Ypost10_p100', 'Rpost10_p100', 'muCTpost', 'SigmaCTpost', 'runTimes', 'Kmax', 'wburn', 'wsample', ...
+    'Xh10', 'Vh10', 'lda', 'eps', 'sigmaU', 'sigmaV', 'phi' , 'sigmaC', 'alpha', 'bAlpha', 'bBeta', 'Kmax', 'wburn', 'wsample', 'stepNo', 'burnIn'); 
+
+
+
+d = date();
+t = clock();
+h = strcat(num2str(t(4)),'-', num2str(t(5)));
+saveName = strcat('resHuman_', d, '_', h, '.mat');
+
+save(saveName, 'Zpost10', 'Ypost10', 'Rpost10', 'muCTpost', 'SigmaCTpost', 'runTimes', 'Kmax', 'wburn', 'wsample', ...
+    'Xh10', 'Vh10', 'lda', 'eps', 'sigmaU', 'sigmaV', 'phi' , 'sigmaC', 'alpha', 'bAlpha', 'bBeta', 'Kmax', 'wburn', 'wsample', 'stepNo', 'burnIn'); 
+
+[pTest_SingleEq_p10_el pTest_Single_p10_el pTest_Joint_p10_el pTest_Cond_p10_el] = humantest(0.000001, XTest_Human_SingleEq, VTest_Human_SingleEq, ...
+                                                                XTest_Human_Single, VTest_Human_Single, ...
+                                                                XTest_Human_Joint, VTest_Human_Joint, ...
+                                                                XTest_Human_Cond, VTest_Human_Cond, ...
+                                                                Xh10, Vh10, Zpost10_p10_el, Rpost10_p10_el, Ypost10_p10_el, lda, eps, sigmaU, sigmaV, phi, sigmaC)
+                                                            
+%%
+[pTest_SingleEq_p100 pTest_Single_p100 pTest_Joint_p100 pTest_Cond_p100] = humantest(0.01, XTest_Human_SingleEq, VTest_Human_SingleEq, ...
+                                                                XTest_Human_Single, VTest_Human_Single, ...
+                                                                XTest_Human_Joint, VTest_Human_Joint, ...
+                                                                XTest_Human_Cond, VTest_Human_Cond, ...
+                                                                Xh10, Vh10, Zpost10_p100, Rpost10_p100, Ypost10_p100, lda, eps, sigmaU, sigmaV, phi, sigmaC)
+%%
+
+[Zpost10_a10_p100K Ypost10_a10_p100K Rpost10_a10_p100K muCTpost SigmaCTpost runTimes Kmax wburn wsample] = wood_ibp_learning_frontend(Xh10,Vh10,lda,eps,sigmaU,sigmaV,phi,sigmaC,alpha,bAlpha,bBeta, Kmax, wburn, wsample, stepNo, burnIn )
+
+[pTest_SingleEq_a10_p100K pTest_Single_a10_p100K pTest_Joint_a10_p100K pTest_Cond_a10_p100K] = humantest(0.000001, XTest_Human_SingleEq, VTest_Human_SingleEq, ...
+                                                                XTest_Human_Single, VTest_Human_Single, ...
+                                                                XTest_Human_Joint, VTest_Human_Joint, ...
+                                                                XTest_Human_Cond, VTest_Human_Cond, ...
+                                                                Xh10, Vh10, Zpost10_a10_p100K, Rpost10_a10_p100K, Ypost10_a10_p100K, lda, eps, sigmaU, sigmaV, phi, sigmaC)
+
+                                                            
+                                                            
+%%
+% alpha = 0.1; 
+
+alpha = 0.1
+
+[Zpost10_a01_p100K Ypost10_a01_p100K Rpost10_a01_p100K muCTpost SigmaCTpost runTimes Kmax wburn wsample] = wood_ibp_learning_frontend(Xh10,Vh10,lda,eps,sigmaU,sigmaV,phi,sigmaC,alpha,bAlpha,bBeta, Kmax, wburn, wsample, stepNo, burnIn )
+
+[pTest_SingleEq_a01_p100K pTest_Single_a01_p100K pTest_Joint_a01_p100K pTest_Cond_a01_p100K] = humantest(0.000001, XTest_Human_SingleEq, VTest_Human_SingleEq, ...
+                                                                XTest_Human_Single, VTest_Human_Single, ...
+                                                                XTest_Human_Joint, VTest_Human_Joint, ...
+                                                                XTest_Human_Cond, VTest_Human_Cond, ...
+                                                                Xh10, Vh10, Zpost10_a01_p100K, Rpost10_a01_p100K, Ypost10_a01_p100K, lda, eps, sigmaU, sigmaV, phi, sigmaC)
+
+saveName = strcat('resHuman_', d, '_', h, '.mat');
+
+save(saveName, 'Zpost10_a01_p100K', 'Ypost10_a01_p100K', 'Rpost10_a01_p100K', 'muCTpost', 'SigmaCTpost', 'runTimes', 'Kmax', 'wburn', 'wsample', ...
+    'Xh10', 'Vh10', 'lda', 'eps', 'sigmaU', 'sigmaV', 'phi' , 'sigmaC', 'alpha', 'bAlpha', 'bBeta', 'Kmax', 'wburn', 'wsample', 'stepNo', 'burnIn', ...
+    'pTest_SingleEq_a01_p100K', 'pTest_Single_a01_p100K', 'pTest_Joint_a01_p100K', 'pTest_Cond_a01_p100K'); 
+
+                                                            
+%%
+
+% alpha = 1; phi = 10 000
+alpha = 1
+
+[Zpost10_a1_p10K Ypost10_a1_p10K Rpost10_a1_p10K muCTpost SigmaCTpost runTimes Kmax wburn wsample] = wood_ibp_learning_frontend(Xh10,Vh10,lda,eps,sigmaU,sigmaV,phi,sigmaC,alpha,bAlpha,bBeta, Kmax, wburn, wsample, stepNo, burnIn )
+
+[pTest_SingleEq_a1_p10K pTest_Single_a1_p10K pTest_Joint_a1_p10K pTest_Cond_a1_p10K] = humantest(0.000001, XTest_Human_SingleEq, VTest_Human_SingleEq, ...
+                                                                XTest_Human_Single, VTest_Human_Single, ...
+                                                                XTest_Human_Joint, VTest_Human_Joint, ...
+                                                                XTest_Human_Cond, VTest_Human_Cond, ...
+                                                                Xh10, Vh10, Zpost10_a1_p10K, Rpost10_a1_p10K, Ypost10_a1_p10K, lda, eps, sigmaU, sigmaV, phi, sigmaC)
+
+                                                            saveName = strcat('resHuman_', d, '_', h, '.mat');
+
+save(saveName, 'Zpost10_a1_p10K', 'Ypost10_a1_p10K', 'Rpost10_a1_p10K', 'muCTpost', 'SigmaCTpost', 'runTimes', 'Kmax', 'wburn', 'wsample', ...
+    'Xh10', 'Vh10', 'lda', 'eps', 'sigmaU', 'sigmaV', 'phi' , 'sigmaC', 'alpha', 'bAlpha', 'bBeta', 'Kmax', 'wburn', 'wsample', 'stepNo', 'burnIn', ...
+    'pTest_SingleEq_a1_p10K', 'pTest_Single_a1_p10K', 'pTest_Joint_a1_p10K', 'pTest_Cond_a1_p10K'); 
+
+                                                            
+%% alpha = 10; phi = 10 000
+alpha = 10
+
+[Zpost10_a10_p10K Ypost10_a10_p10K Rpost10_a10_p10K muCTpost SigmaCTpost runTimes Kmax wburn wsample] = wood_ibp_learning_frontend(Xh10,Vh10,lda,eps,sigmaU,sigmaV,phi,sigmaC,alpha,bAlpha,bBeta, Kmax, wburn, wsample, stepNo, burnIn )
+
+[pTest_SingleEq_a10_p10K pTest_Single_a10_p10K pTest_Joint_a10_p10K pTest_Cond_a10_p10K] = humantest(0.000001, XTest_Human_SingleEq, VTest_Human_SingleEq, ...
+                                                                XTest_Human_Single, VTest_Human_Single, ...
+                                                                XTest_Human_Joint, VTest_Human_Joint, ...
+                                                                XTest_Human_Cond, VTest_Human_Cond, ...
+                                                                Xh10, Vh10, Zpost10_a10_p10K, Rpost10_a10_p10K, Ypost10_a10_p10K, lda, eps, sigmaU, sigmaV, phi, sigmaC)
+
+                                                            saveName = strcat('resHuman_', d, '_', h, '.mat');
+
+save(saveName, 'Zpost10_a10_p10K', 'Ypost10_a10_p10K', 'Rpost10_a10_p10K', 'muCTpost', 'SigmaCTpost', 'runTimes', 'Kmax', 'wburn', 'wsample', ...
+    'Xh10', 'Vh10', 'lda', 'eps', 'sigmaU', 'sigmaV', 'phi' , 'sigmaC', 'alpha', 'bAlpha', 'bBeta', 'Kmax', 'wburn', 'wsample', 'stepNo', 'burnIn', ...
+    'pTest_SingleEq_a10_p10K', 'pTest_Single_a10_p10K', 'pTest_Joint_a10_p10K', 'pTest_Cond_a10_p10K'); 
+
+%% dealing with the differnences in the single Scenes
+for j = 1:10
+    ps(j,:) = 1-(1-lda).^(Z(j,:)*Y)*(1-eps);
+end
+    
+ps_forYs = prod(ps, 1);
