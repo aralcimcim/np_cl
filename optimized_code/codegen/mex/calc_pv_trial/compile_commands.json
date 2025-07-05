@@ -1,0 +1,140 @@
+[
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  calc_pv_trial_data.cpp -o build/glnxa64/calc_pv_trial_data.o",
+    "file": "calc_pv_trial_data.cpp",
+    "output": "build/glnxa64/calc_pv_trial_data.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  rt_nonfinite.cpp -o build/glnxa64/rt_nonfinite.o",
+    "file": "rt_nonfinite.cpp",
+    "output": "build/glnxa64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  calc_pv_trial_initialize.cpp -o build/glnxa64/calc_pv_trial_initialize.o",
+    "file": "calc_pv_trial_initialize.cpp",
+    "output": "build/glnxa64/calc_pv_trial_initialize.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  calc_pv_trial_terminate.cpp -o build/glnxa64/calc_pv_trial_terminate.o",
+    "file": "calc_pv_trial_terminate.cpp",
+    "output": "build/glnxa64/calc_pv_trial_terminate.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  calc_pv_trial.cpp -o build/glnxa64/calc_pv_trial.o",
+    "file": "calc_pv_trial.cpp",
+    "output": "build/glnxa64/calc_pv_trial.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  find.cpp -o build/glnxa64/find.o",
+    "file": "find.cpp",
+    "output": "build/glnxa64/find.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  indexShapeCheck.cpp -o build/glnxa64/indexShapeCheck.o",
+    "file": "indexShapeCheck.cpp",
+    "output": "build/glnxa64/indexShapeCheck.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  any1.cpp -o build/glnxa64/any1.o",
+    "file": "any1.cpp",
+    "output": "build/glnxa64/any1.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  sum.cpp -o build/glnxa64/sum.o",
+    "file": "sum.cpp",
+    "output": "build/glnxa64/sum.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  eye.cpp -o build/glnxa64/eye.o",
+    "file": "eye.cpp",
+    "output": "build/glnxa64/eye.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  mldivide.cpp -o build/glnxa64/mldivide.o",
+    "file": "mldivide.cpp",
+    "output": "build/glnxa64/mldivide.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  repmat.cpp -o build/glnxa64/repmat.o",
+    "file": "repmat.cpp",
+    "output": "build/glnxa64/repmat.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  warning.cpp -o build/glnxa64/warning.o",
+    "file": "warning.cpp",
+    "output": "build/glnxa64/warning.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  det.cpp -o build/glnxa64/det.o",
+    "file": "det.cpp",
+    "output": "build/glnxa64/det.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  mtimes.cpp -o build/glnxa64/mtimes.o",
+    "file": "mtimes.cpp",
+    "output": "build/glnxa64/mtimes.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  sub2ind.cpp -o build/glnxa64/sub2ind.o",
+    "file": "sub2ind.cpp",
+    "output": "build/glnxa64/sub2ind.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  sumMatrixIncludeNaN.cpp -o build/glnxa64/sumMatrixIncludeNaN.o",
+    "file": "sumMatrixIncludeNaN.cpp",
+    "output": "build/glnxa64/sumMatrixIncludeNaN.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  interface/_coder_calc_pv_trial_api.cpp -o build/glnxa64/_coder_calc_pv_trial_api.o",
+    "file": "interface/_coder_calc_pv_trial_api.cpp",
+    "output": "build/glnxa64/_coder_calc_pv_trial_api.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  interface/_coder_calc_pv_trial_mex.cpp -o build/glnxa64/_coder_calc_pv_trial_mex.o",
+    "file": "interface/_coder_calc_pv_trial_mex.cpp",
+    "output": "build/glnxa64/_coder_calc_pv_trial_mex.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  eml_int_forloop_overflow_check.cpp -o build/glnxa64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.cpp",
+    "output": "build/glnxa64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  eml_mtimes_helper.cpp -o build/glnxa64/eml_mtimes_helper.o",
+    "file": "eml_mtimes_helper.cpp",
+    "output": "build/glnxa64/eml_mtimes_helper.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  interface/_coder_calc_pv_trial_info.cpp -o build/glnxa64/_coder_calc_pv_trial_info.o",
+    "file": "interface/_coder_calc_pv_trial_info.cpp",
+    "output": "build/glnxa64/_coder_calc_pv_trial_info.o"
+  },
+  {
+    "directory": "/home/ari/Desktop/code_clean/codegen/mex/calc_pv_trial",
+    "command": "/usr/bin/g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I \".\" -I \"/home/ari/Desktop/code_clean\" -I \"./interface\" -I \"/usr/local/MATLAB/R2023b/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=calc_pv_trial_mex_jit -DMW_NEEDS_VERSION_H -msse2 -c  /usr/local/MATLAB/R2023b/extern/version/cpp_mexapi_version.cpp -o build/glnxa64/cpp_mexapi_version.o",
+    "file": "/usr/local/MATLAB/R2023b/extern/version/cpp_mexapi_version.cpp",
+    "output": "build/glnxa64/cpp_mexapi_version.o"
+  }
+]
